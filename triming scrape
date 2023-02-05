@@ -13,6 +13,9 @@ response = requests.get(url, headers=headers, timeout=10)
 print(response.status_code) 
 #Grab response from requests & convert to json https://developer.mozilla.org/en-US/docs/Web/API/Response/json
 json_object = response.json()
+        ## for local json load
+        #f = open(r'C:\Users\gouta\Downloads\oi\option-chain-indices.json')
+        #json_object = json.load(f)
 
 ## JSON FORMATTING KNOWLEDGE
 #Parse the json into a a usable format
